@@ -1,14 +1,12 @@
-//your JS code here. If required.
 document.addEventListener('DOMContentLoaded', function() {
-  // Create a new <p> element
-  var paragraph = document.createElement('p');
+  setTimeout(function() {
+    // Clear the existing content of the <body> element
+    document.body.innerHTML = '';
 
-  // Set the text content of the paragraph
-  paragraph.textContent = 'DOM load success';
+    // Create a text node with the desired content
+    var textNode = document.createTextNode('DOM load success');
 
-  // Clear the existing content of the <body> element
-  document.body.innerHTML = '';
-
-  // Append the paragraph to the <body> element
-  document.body.appendChild(paragraph);
+    // Append the text node to the <body> element
+    document.body.appendChild(textNode);
+  }, 4000);
 });

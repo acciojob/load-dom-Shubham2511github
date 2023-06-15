@@ -1,5 +1,5 @@
 //your JS code here. If required.
 function addText() {
-	document.body.textContent = "DOM load success";
+	document.body.innerText = "DOM load success";
 }
 window.onload(addText());
